@@ -1,0 +1,391 @@
+  @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@700 & display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.off h2 {
+    background-color: #030000;
+    color: #f5f4f3;
+    height: 30px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #e971c1;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.marca h1{
+    color: #030000;
+    border-color: 42px solid #ff1fbc;
+    font-family: 'Libre Baskerville', serif;
+    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #030000;
+    font-weight: bold;
+}
+
+#search {
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #040000;
+    border-radius: 5px;
+}
+
+ button {
+    padding: 5px 10px;
+    background-color: #ff009d;
+    border: none;
+    border-radius: 10px;
+    color: #f5f4f3;
+    cursor: pointer;
+}
+
+.new{
+    width: 100%;
+    background-image: url('../img/fotoprincipal.png');
+    background-repeat: no-repeat;
+    padding: 210px;
+    background-position: center ;
+    background-size: cover;
+}
+.new h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: start;
+    font-size: 50px;
+}
+
+.new p{
+    text-align: start;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+.tendencias{
+    background-color:#e971c1 ;
+}
+.tendencias h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+/* Carrousel de fotos */
+.carousel-container {
+      display: flex;
+    }
+
+    .carousel-slide {
+      width: 50%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .carousel-slide img {
+        width: 100%;
+        height: 90%;
+      object-fit: cover; /* Mantiene la proporción de aspecto */
+    }
+    .carousel-controls {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+  
+      #prevBtn,
+      #nextBtn {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+/* footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align:start ;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 40px;
+}
+/* Estilos para los logos */
+.logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces */
+.enlace {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Cambia el color del enlace al pasar el cursor sobre él */
+.enlace:hover {
+    color: #4285f4;
+}
+footer p{
+    text-align: center;
+
+}
+
+
+/* Media query para pantallas más pequeñas */
+@media  (max-width: 768px) {
+    .off h2 {
+        font-size: 16px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .marca h1 {
+        font-size: 24px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    #search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .new {
+        padding: 120px;
+    }
+
+    .new h2 {
+        font-size: 36px;
+    }
+
+    .new p {
+        font-size: 28px;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-slide {
+        width: 100%;
+    }
+
+    .carousel-slide img {
+        height: 100%;
+    }
+
+    .tendencias h2 {
+        font-size: 36px;
+    }
+
+    footer {
+        padding: 10px;
+    }}
+
+
+
+
+/*! Nosotros */
+.presentacion h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 20px;
+}
+
+.nosotros img {
+    width: 60%;
+    margin: 10px;
+}
+
+.nosotros p {
+text-align: center;
+padding: 30px;
+margin: 15px;
+ font-size: 1.5em;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column;
+    }
+    .nosotros img {
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+        max-width: none; /* Anula la propiedad max-width del estilo original */
+    }
+    
+   
+.nosotros p {
+        font-size: 1.2em;
+    }
+}
+/* Formulario */
+
+  /* Estilo para el contenedor del formulario */
+.formulario {
+    max-width: 700px;
+    margin: 30px auto;
+  background-color: #f5f5f5;
+    padding: 20px;
+  border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para el título del formulario */
+  legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para las etiquetas */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para los campos de entrada de texto */
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo para el campo de comentario */
+  input[type="text"][name="Comentarios"] {
+    
+   
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  }
+
+/*! productos */
+.tienda{
+    margin: 30px;
+}
+.productos1 {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around
+}
+.productos2 {
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around
+}
+.producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .producto img {
+    max-width: 100%;
+    max-height: 100%; /* Garantiza que la imagen no se desborde del contenedor */
+    width: 100%;
+    height: 60%; /* Establece un tamaño fijo para las imágenes */
+      }
+  
+
+  .producto h2 {
+    font-size: 1.5em;
+  }
+
+  .producto p {
+    margin: 10px 0;
+  }
+
+  @media (max-width: 768px) {
+    .productos1, .productos2 {
+            flex-direction: column; /* Cambia la dirección de los elementos a una columna */
+        }
+    
+    .producto { 
+    width: 100%; /* Ocupa el ancho completo de la pantalla */
+        }
+
+    }
